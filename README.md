@@ -7,7 +7,8 @@ This service is written in NodeJS, Hence need to install NodeJS in the system.
 
 
 ```
-# yum install nodejs make gcc-c++ -y 
+# apt update
+# apt install npm -y 
 ```
 
 
@@ -18,7 +19,7 @@ As part of operating system standards, we run all the applications and databases
 So to run the catalogue service we choose to run as a normal user and that user name should be more relevant to the project. Hence we will use `roboshop` as the username to run the service.
 
 ```
-# useradd roboshop
+# useradd -m -s /bin/bash roboshop
 ```
 
 So let's switch to the `roboshop` user and run the following commands.
